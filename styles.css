@@ -125,6 +125,21 @@ button { font: inherit; }
 .future-projects strong, .future-projects p { display: block; margin: 0; }
 .future-projects strong { color: var(--text); }
 .future-projects p { margin-top: 3px; font-size: .88rem; }
+.project-roles-intro { max-width: 780px; margin: 34px 0 17px; }
+.project-roles-intro h3 { margin: 7px 0 8px; font-size: clamp(1.45rem, 2.8vw, 2.2rem); line-height: 1.08; letter-spacing: -.04em; }
+.project-roles-intro > p:not(.eyebrow) { margin: 0; color: var(--muted); }
+.responsibility-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.responsibility-card { position: relative; min-height: 340px; padding: 22px; overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: linear-gradient(180deg, var(--panel-bright), var(--panel)); }
+.responsibility-card::after { content: ""; position: absolute; right: -52px; bottom: -60px; width: 165px; aspect-ratio: 1; border-radius: 50%; background: var(--responsibility-accent); filter: blur(6px); opacity: .15; }
+.responsibility-card.creative-role { --responsibility-accent: var(--violet); }
+.responsibility-card.marketing-role { --responsibility-accent: var(--mint); }
+.responsibility-card.engineering-role { --responsibility-accent: var(--blue); }
+.responsibility-card > span { display: inline-grid; place-items: center; width: 34px; height: 34px; border: 1px solid color-mix(in srgb, var(--responsibility-accent) 55%, transparent); border-radius: 11px; color: var(--responsibility-accent); background: color-mix(in srgb, var(--responsibility-accent) 8%, transparent); font-size: .74rem; font-weight: 950; }
+.responsibility-card .eyebrow { margin-top: 16px; color: var(--responsibility-accent); font-size: .65rem; }
+.responsibility-card h3 { margin: 8px 0 9px; font-size: 1.18rem; line-height: 1.15; letter-spacing: -.025em; }
+.responsibility-card p:not(.eyebrow), .responsibility-card li { color: var(--muted); font-size: .87rem; }
+.responsibility-card p:not(.eyebrow) { margin: 0; }
+.responsibility-card ul { position: relative; z-index: 1; margin: 14px 0 0; padding-left: 18px; }
 
 .participation-section { border-block: 1px solid var(--line); background: radial-gradient(circle at 92% 5%, rgba(171,135,255,.14), transparent 28%), linear-gradient(180deg, var(--soft-bg), var(--bg)); }
 .participation-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
@@ -200,7 +215,7 @@ button { font: inherit; }
   .hero-grid, .project-card, .contact-box, .profile-hero-grid, .profile-layout { grid-template-columns: 1fr; }
   .hero-grid { min-height: auto; gap: 34px; padding: 65px 0 60px; }
   .team-summary { max-width: 680px; }
-  .member-grid, .path-grid, .participation-grid { grid-template-columns: 1fr; }
+  .member-grid, .path-grid, .participation-grid, .responsibility-grid { grid-template-columns: 1fr; }
   .member-card { min-height: 0; }
   .process-grid { grid-template-columns: 1fr 1fr; }
   .contact-buttons { grid-template-columns: 1fr 1fr; }
