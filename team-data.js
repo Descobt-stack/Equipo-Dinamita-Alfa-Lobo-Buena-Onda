@@ -16,7 +16,9 @@ window.teamData = {
       experience: "Experiencia en coordinación administrativa y apoyo operativo de dos sucursales, con aportaciones a la mejora del seguimiento de facturación, control documental y procesos internos.",
       skills: ["Organización", "Comunicación", "Atención al cliente", "Canva"],
       tone: "violet",
-      profileUrl: "perfiles/anahi-ramirez.html"
+      profileUrl: "perfiles/anahi-ramirez.html",
+      updateLabel: "Actualizar este perfil del equipo",
+      updateUrl: "https://github.com/Descobt-stack/Equipo-Dinamita-Alfa-Lobo-Buena-Onda/issues/new?template=actualizacion-de-perfil.md&title=Actualizaci%C3%B3n%20de%20perfil%20-%20Anah%C3%AD"
     },
     {
       initials: "02",
@@ -27,7 +29,9 @@ window.teamData = {
       experience: "Experiencia por agregar cuando compartas sus estudios, trabajo, proyectos, habilidades y logros.",
       skills: ["Estrategia", "Audiencia", "Marca", "Comunicación"],
       tone: "mint",
-      profileUrl: ""
+      profileUrl: "",
+      updateLabel: "Completar este perfil del equipo",
+      updateUrl: "https://github.com/Descobt-stack/Equipo-Dinamita-Alfa-Lobo-Buena-Onda/issues/new?template=actualizacion-de-perfil.md&title=Actualizaci%C3%B3n%20de%20perfil%20-%20Marketing"
     },
     {
       initials: "JV",
@@ -39,7 +43,9 @@ window.teamData = {
       skills: ["Software", "Automatización", "Soporte TI", "Producto digital"],
       tone: "blue",
       profileUrl: "https://descobt-stack.github.io/portfolio-josue/",
-      profileLabel: "Ver portafolio y trayectoria"
+      profileLabel: "Ver portafolio y trayectoria",
+      updateLabel: "Actualizar mi perfil dentro del equipo",
+      updateUrl: "https://github.com/Descobt-stack/Equipo-Dinamita-Alfa-Lobo-Buena-Onda/issues/new?template=actualizacion-de-perfil.md&title=Actualizaci%C3%B3n%20de%20perfil%20-%20Josu%C3%A9"
     }
   ],
   projects: [
