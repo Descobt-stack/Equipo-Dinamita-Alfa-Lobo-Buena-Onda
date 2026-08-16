@@ -21,17 +21,18 @@ window.teamData = {
       updateUrl: "https://github.com/Descobt-stack/Equipo-Dinamita-Alfa-Lobo-Buena-Onda/issues/new?template=actualizacion-de-perfil.md&title=Actualizaci%C3%B3n%20de%20perfil%20-%20Anah%C3%AD"
     },
     {
-      initials: "02",
-      name: "Colaborador/a 02",
-      role: "Director/a de marketing",
-      subtitle: "Estrategia de comunicación, audiencia y crecimiento",
-      summary: "Aquí agregaremos su perfil profesional, áreas de experiencia y la forma en que ayuda a llevar cada proyecto a las personas adecuadas.",
-      experience: "Experiencia por agregar cuando compartas sus estudios, trabajo, proyectos, habilidades y logros.",
-      skills: ["Estrategia", "Audiencia", "Marca", "Comunicación"],
+      initials: "LR",
+      name: "Luis Fernando Rosas Flores",
+      role: "Director de marketing",
+      subtitle: "Investigación, estrategia y comunicación de marca",
+      summary: "Estudiante próximo a egresar de Mercadotecnia, con experiencia en gestión de equipos, planeación de contenido, campañas y análisis de resultados. Dentro del equipo conecta cada producto con su audiencia, su mensaje y una estrategia clara.",
+      experience: "Experiencia en planeación de contenido y campañas, gestión de redes, branding, investigación aplicada y análisis de desempeño digital.",
+      skills: ["Estrategia", "Investigación", "Contenido", "Analítica digital"],
       tone: "mint",
-      profileUrl: "",
-      updateLabel: "Completar este perfil del equipo",
-      updateUrl: "https://github.com/Descobt-stack/Equipo-Dinamita-Alfa-Lobo-Buena-Onda/issues/new?template=actualizacion-de-perfil.md&title=Actualizaci%C3%B3n%20de%20perfil%20-%20Marketing"
+      profileUrl: "perfiles/luis-rosas.html",
+      profileLabel: "Ver perfil y trayectoria",
+      updateLabel: "Actualizar este perfil del equipo",
+      updateUrl: "https://github.com/Descobt-stack/Equipo-Dinamita-Alfa-Lobo-Buena-Onda/issues/new?template=actualizacion-de-perfil.md&title=Actualizaci%C3%B3n%20de%20perfil%20-%20Luis"
     },
     {
       initials: "JV",
