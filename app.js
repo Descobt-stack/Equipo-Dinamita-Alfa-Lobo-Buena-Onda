@@ -19,6 +19,9 @@
     const profileAction = member.profileUrl
       ? `<a class="member-profile-action available" href="${escapeHTML(member.profileUrl)}">${escapeHTML(member.profileLabel || "Ver perfil y trayectoria")} <span aria-hidden="true">→</span></a>`
       : `<span class="member-profile-action pending">Trayectoria en preparación</span>`;
+    const updateAction = member.updateUrl
+      ? `<a class="member-update-action" href="${escapeHTML(member.updateUrl)}" target="_blank" rel="noopener noreferrer">${escapeHTML(member.updateLabel || "Actualizar este perfil del equipo")} <span aria-hidden="true">↗</span></a>`
+      : "";
     return `
     <article class="member-card" data-tone="${escapeHTML(member.tone)}">
       <div class="member-top">
@@ -30,6 +33,7 @@
       <p class="member-summary">${escapeHTML(member.summary)}</p>
       <div class="member-experience"><b>Experiencia</b>${escapeHTML(member.experience)}</div>
       ${profileAction}
+      ${updateAction}
       <div class="skill-chips" aria-label="Áreas principales de ${escapeHTML(member.name)}">
         ${member.skills.map((skill) => `<span class="skill-chip">${escapeHTML(skill)}</span>`).join("")}
       </div>
