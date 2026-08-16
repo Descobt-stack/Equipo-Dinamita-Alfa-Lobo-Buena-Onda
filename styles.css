@@ -90,6 +90,8 @@ button { font: inherit; }
 .member-profile-action.available { position: relative; z-index: 1; color: var(--accent-card); background: color-mix(in srgb, var(--accent-card) 8%, transparent); transition: transform .18s ease, border-color .18s ease; }
 .member-profile-action.available:hover { transform: translateY(-1px); border-color: var(--accent-card); }
 .member-profile-action.pending { color: var(--muted); background: rgba(8,11,18,.22); }
+.member-update-action { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 9px; padding: 9px 11px; border: 1px dashed color-mix(in srgb, var(--accent-card) 58%, var(--line)); border-radius: 12px; color: #dbe5f5; background: rgba(8,11,18,.18); font-size: .78rem; font-weight: 780; transition: transform .18s ease, border-color .18s ease, background .18s ease; }
+.member-update-action:hover { transform: translateY(-1px); border-color: var(--accent-card); background: color-mix(in srgb, var(--accent-card) 8%, transparent); }
 .skill-chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto; padding-top: 20px; }
 .skill-chip { position: relative; z-index: 1; padding: 6px 8px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); background: rgba(8,11,18,.33); font-size: .72rem; }
 .placeholder-notice { margin: 17px 0 0; color: var(--muted); font-size: .85rem; }
