@@ -1,0 +1,47 @@
+{
+  "generator": "Built-in image generation",
+  "purpose": "Ilustraciones del portafolio; no representan oficinas, documentos ni evidencia laboral real.",
+  "palette": [
+    "marfil",
+    "champagne",
+    "rosa suave",
+    "borgoña"
+  ],
+  "assets": [
+    {
+      "file": "perfiles/anahi/assets/inicio.webp",
+      "mobile": "perfiles/anahi/assets/inicio-mobile.webp",
+      "prompt": "A bright elegant administrative workspace: ivory desk, open cream planner, slim laptop viewed from behind, pale blush ceramic vase and delicate small flowers. Spacious room, flowing linen curtains, warm natural morning light. Quiet professional atmosphere."
+    },
+    {
+      "file": "perfiles/anahi/assets/perfil.webp",
+      "mobile": "perfiles/anahi/assets/perfil-mobile.webp",
+      "prompt": "Close editorial still life of an open cream notebook with blank pages, a fine burgundy pen and a pale rose ceramic cup beside soft linen curtains. Warm sunlight and a single subtle botanical branch, thoughtful professional mood."
+    },
+    {
+      "file": "perfiles/anahi/assets/experiencia.webp",
+      "mobile": "perfiles/anahi/assets/experiencia-mobile.webp",
+      "prompt": "Organized administrative desk with neat unlabeled invoice folders, a calculator, cream paper stacks with no legible writing, a closed blush planner and laptop edge. Beautiful soft daylight and tidy documentary atmosphere."
+    },
+    {
+      "file": "perfiles/anahi/assets/habilidades.webp",
+      "mobile": "perfiles/anahi/assets/habilidades-mobile.webp",
+      "prompt": "Clean ivory desk with laptop displaying only subtle abstract spreadsheet grid shapes without letters or numbers, calculator, burgundy pen and organized document tray. Refined editorial photography about office tools and administration."
+    },
+    {
+      "file": "perfiles/anahi/assets/proyectos.webp",
+      "mobile": "perfiles/anahi/assets/proyectos-mobile.webp",
+      "prompt": "Refined business process planning scene: blank cream and muted dusty-rose sticky notes arranged in three tidy columns on pale textured board, small unmarked stock boxes on a side shelf. Bright natural lighting, visual metaphor for Kanban and inventory, no charts or labels."
+    },
+    {
+      "file": "perfiles/anahi/assets/cv.webp",
+      "mobile": "perfiles/anahi/assets/cv-mobile.webp",
+      "prompt": "A single elegantly arranged cream blank résumé sheet on ivory desk, soft burgundy binder clip and slim rose pen, cotton paper texture, delicate shadows, pale rose ceramic vase in background. Professional recruitment editorial still life, no printed text."
+    },
+    {
+      "file": "perfiles/anahi/assets/equipo.webp",
+      "mobile": "perfiles/anahi/assets/equipo-mobile.webp",
+      "prompt": "Bright modern small collaborative meeting space with three empty chairs around an ivory round table, notebooks, a simple whiteboard with no writing, blush upholstery, warm daylight, sophisticated minimal styling."
+    }
+  ]
+}
