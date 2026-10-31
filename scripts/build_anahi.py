@@ -57,8 +57,58 @@ page('cv.html','Currículum profesional','Currículum · Octubre de 2026','Mi tr
 body='''<section class="shell section"><object class="viewer" data="assets/CV_Anahi_Ramirez_2026_PUBLICO.pdf" type="application/pdf" aria-label="Currículum de Anahí Ramírez en PDF"><div class="card"><h2>Consulta el documento</h2><p>Si tu navegador no muestra el PDF aquí, puedes abrirlo o descargarlo directamente.</p><a class="button primary" href="assets/CV_Anahi_Ramirez_2026_PUBLICO.pdf">Abrir PDF</a></div></object><p class="note">También puedes consultar la <a href="cv.html">versión web del currículum</a>.</p></section>'''
 page('cv-pdf.html','Visor de currículum','Documento PDF','Currículum<br><em>profesional.</em>','Consulta o descarga mi currículum público actualizado en octubre de 2026.','cv',body,actions(('assets/CV_Anahi_Ramirez_2026_PUBLICO.pdf','Abrir PDF directamente',''),('assets/CV_Anahi_Ramirez_2026_PUBLICO.pdf','Descargar PDF',' download')))
 legacy=ROOT.parent/'anahi-ramirez.html'
-legacy.write_text('''<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=anahi/index.html"><link rel="canonical" href="'''+BASE+'''index.html"><title>Anahí Ramírez · Portafolio profesional</title></head><body><p><a href="anahi/index.html">Abrir el portafolio actualizado de Anahí Ramírez →</a></p></body></html>''')
+legacy.write_text('''<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=anahi/index.html"><link rel="canonical" href="'''+BASE+'''index.html"><title>Anahí Ramírez · Portafolio profesional</title></head><body><p><a href="anahi/index.html">Portafolio actualizado de Anahí Ramírez →</a></p></body></html>''')
 for html_path in ROOT.glob('*.html'):
  txt=html_path.read_text()
- html_path.write_text(txt.replace('v=20261030','v=20261031'))
+ txt=txt.replace('v=20261030','v=20261031')
+ first_person={
+  'Conocer mi experiencia ↗':'Mi experiencia ↗',
+  'Conocer mi experiencia':'Mi experiencia',
+  'Ver mis habilidades ↗':'Mis habilidades ↗',
+  'Ver mis habilidades':'Mis habilidades',
+  'Ver habilidades ↗':'Mis habilidades ↗',
+  'Ver habilidades':'Mis habilidades',
+  'Leer mi perfil ↗':'Mi perfil ↗',
+  'Un poco más sobre mí ↗':'Mi perfil completo ↗',
+  'Conocer el alcance del proyecto ↗':'Mi proyecto académico ↗',
+  'Consultar currículum':'Consulto mi currículum',
+  'Descargar currículum':'Descargo mi CV',
+  'Descargar PDF':'Descargo mi PDF',
+  'Abrir PDF directamente':'Abro mi PDF',
+  'Abrir visor PDF':'Mi visor PDF',
+  'Ver PDF':'Mi PDF',
+  'Conocer al equipo ↗':'Mi trabajo en equipo ↗',
+  'Conocer el proyecto académico':'Mi proyecto académico',
+  'Ver proyecto académico':'Mi proyecto académico',
+  'Ver currículum ↗':'Mi currículum ↗',
+  'Ver currículum':'Mi currículum',
+  'Ver mi currículum':'Mi currículum',
+  'Conoce el proyecto académico en el que analicé procesos e inventarios.':'Comparto mi proyecto académico y el análisis de procesos e inventarios.',
+  'Consulta las herramientas que utilizo y el alcance de mi formación.':'Presento las herramientas que utilizo y el alcance de mi formación.',
+  'Conoce las otras miradas.':'Comparto la colaboración que construyo con mi equipo.',
+  'Conoce su perfil y su aporte al equipo.':'Presento el perfil y el aporte de Luis al equipo.',
+  'Nuestro trabajo':'Mi trabajo en equipo',
+  'Consulta el documento':'Presento el documento',
+  'Consulta o descarga mi currículum público actualizado en octubre de 2026.':'Presento mi currículum público actualizado en octubre de 2026.',
+  'Ver portafolio de Josué':'Presento el portafolio de Josué',
+  'Ver perfil de Luis':'Presento el perfil de Luis',
+  'Visitar la página del equipo':'Regreso a mi página de equipo',
+  'Ver el equipo ↗':'Mi equipo ↗',
+  'Si tu navegador no muestra el PDF aquí, puedes abrirlo o descargarlo directamente.':'El visor integrado muestra mi CV; también dejo los enlaces directos para abrirlo o descargarlo.',
+  'También puedes consultar la':'También dejo disponible la',
+  'Abrir PDF':'Abro mi PDF',
+  'Abrir el portafolio actualizado de Anahí Ramírez →':'Portafolio actualizado de Anahí Ramírez →',
+  'Volver arriba ↑':'Regreso al inicio ↑',
+  'Listo para consultar.':'Mi CV está listo.',
+  'Una página con texto seleccionable. Versión pública sin datos personales de contacto.':'Presento una página con texto seleccionable y una versión pública sin datos personales de contacto.',
+  'El visor integrado muestra mi CV; también dejo los enlaces directos para abrirlo o descargarlo.':'El visor integrado muestra mi CV; dejo también enlaces directos para acceder a mi archivo.',
+  'Dirección creativa · Anahí Patiño':'Mi dirección creativa',
+  'Desarrollo · Josué Villarruel':'Desarrollo con Josué',
+  'Marketing · Luis Rosas':'Marketing con Luis',
+  'Organización, revisión de ideas y perspectiva administrativa.':'Organizo, reviso ideas y aporto perspectiva administrativa.',
+  'Construcción y evolución de las soluciones digitales.':'Trabajo con Josué en la construcción y evolución de las soluciones digitales.',
+  'Comunicación y perspectiva de difusión de los proyectos.':'Trabajo con Luis en la comunicación y difusión de los proyectos.',
+ }
+ for old,new in first_person.items(): txt=txt.replace(old,new)
+ html_path.write_text(txt)
 print('8 páginas y entrada anterior actualizadas')

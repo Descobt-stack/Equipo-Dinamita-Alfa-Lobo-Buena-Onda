@@ -18,3 +18,16 @@ body{background:radial-gradient(circle at 88% 0%,#f8e9e8 0,#fcf9f6 27rem),var(--
 @media(max-width:360px){.nav{gap:6px}.brand{min-width:0;flex:1}.brand>span{min-width:0;overflow:hidden}.brand strong{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.menu{padding-inline:10px}}
 .hero:after{background:linear-gradient(90deg,#fcf9f6f5 0%,#fcf9f6d6 29%,#fcf9f680 57%,#fcf9f600 87%)}
 @media(max-width:640px){.hero:after{background:linear-gradient(90deg,#fcf9f6f4 0%,#fcf9f6cf 67%,#fcf9f652 100%)}}
+/* Navegación y acciones propias: menos genéricas, más editoriales y con lectura firme. */
+.header{border-radius:20px 20px 7px 20px}
+.button{border-radius:12px 4px 12px 4px;letter-spacing:.01em;box-shadow:0 5px 0 #ead5d9;transform:none}
+.button:hover{transform:translateY(-2px);box-shadow:0 7px 0 #ead5d9}
+.button.primary{border-radius:4px 12px 4px 12px;box-shadow:0 5px 0 #542536}
+.button.primary:hover{box-shadow:0 7px 0 #542536}
+.links a{border-radius:10px 4px 10px 4px}
+.links a.nav-cv{border-radius:8px 3px 8px 3px}
+.text-link{position:relative;text-decoration:none;padding-bottom:4px}
+.text-link:after{content:'';position:absolute;left:0;right:24%;bottom:0;height:2px;background:var(--rose-deep);transform-origin:left;transition:transform .2s}
+.text-link:hover:after{transform:scaleX(1.35)}
+.page-end{border-radius:20px 6px 20px 6px}
+@media(max-width:640px){.button{box-shadow:0 4px 0 #ead5d9}.button.primary{box-shadow:0 4px 0 #542536}.button:hover,.button.primary:hover{box-shadow:0 4px 0 #ead5d9}.button.primary:hover{box-shadow:0 4px 0 #542536}}
