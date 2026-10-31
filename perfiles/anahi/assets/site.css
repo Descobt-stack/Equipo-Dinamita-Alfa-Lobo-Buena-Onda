@@ -47,3 +47,4 @@ body{background:radial-gradient(circle at 88% 0%,#f8e9e8 0,#fcf9f6 27rem),var(--
 /* Último ajuste móvil: navegación y cierre más finos, sin perder legibilidad. */
 @media(max-width:920px){.links{width:min(274px,calc(100vw - 30px));padding:6px;border-radius:14px}.links a{padding:7px 11px;font-size:.8rem;line-height:1.35}.links a:last-child{border-bottom:0}}
 @media(max-width:640px){.footer-actions{gap:5px;margin-top:14px}.footer-button{min-height:27px;padding:3px 7px;font-size:.62rem;border-radius:4px}.footer-button span{font-size:.62rem}}
+.button.is-disabled{opacity:.62;cursor:not-allowed;pointer-events:none;filter:saturate(.65)}
