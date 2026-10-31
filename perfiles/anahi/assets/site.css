@@ -38,3 +38,9 @@ body{background:radial-gradient(circle at 88% 0%,#f8e9e8 0,#fcf9f6 27rem),var(--
 .footer-button:hover{background:var(--soft);transform:translateY(-2px)}
 @media(max-width:920px){.links{border-radius:20px 6px 20px 6px;width:min(340px,calc(100vw - 30px));padding:12px}.links.open{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.links a{font-size:.86rem;padding:13px 12px;border:1px solid var(--line);background:#fffdfb;border-radius:11px 4px 11px 4px}.links a.nav-cv{grid-column:1 / -1;text-align:center}.links a:hover,.links a[aria-current]{background:var(--soft)}}
 @media(max-width:640px){.footer-actions{justify-content:flex-start;margin-top:19px}.footer-button{padding:9px 11px;font-size:.72rem}}
+/* Ajuste final: lista ligera y acciones de cierre compactas. */
+.menu{min-height:40px;padding:7px 15px;border-radius:8px;background:var(--white);box-shadow:none;font-size:.8rem}
+.footer-actions{gap:7px}
+.footer-button{min-height:30px;padding:5px 9px;border-radius:5px;background:transparent;box-shadow:none;font-size:.68rem;font-weight:500}
+@media(max-width:920px){.links{width:min(290px,calc(100vw - 30px));border-radius:16px;padding:8px;display:none}.links.open{display:flex;flex-direction:column;align-items:stretch;gap:0}.links a{padding:10px 13px;border:0;border-bottom:1px solid var(--line);background:transparent;border-radius:4px;text-align:left;font-size:.86rem}.links a:last-child{border-bottom:0}.links a.nav-cv{grid-column:auto;text-align:left}.links a:hover,.links a[aria-current]{background:var(--soft)}}
+@media(max-width:640px){.footer-actions{justify-content:flex-start;margin-top:16px}.footer-button{min-height:29px;padding:4px 8px;font-size:.66rem}}
