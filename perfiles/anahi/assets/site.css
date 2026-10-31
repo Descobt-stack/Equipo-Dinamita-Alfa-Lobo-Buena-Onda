@@ -16,3 +16,5 @@ body{background:radial-gradient(circle at 88% 0%,#f8e9e8 0,#fcf9f6 27rem),var(--
 .wide-card:before,.cv-sheet:before,.locked:before{display:none}
 @media(max-width:640px){.hero:before{width:380px;height:380px;right:-210px;top:130px}.hero-content:before{font-size:.61rem}.brand small{font-size:.5rem}}
 @media(max-width:360px){.nav{gap:6px}.brand{min-width:0;flex:1}.brand>span{min-width:0;overflow:hidden}.brand strong{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.menu{padding-inline:10px}}
+.hero:after{background:linear-gradient(90deg,#fcf9f6f5 0%,#fcf9f6d6 29%,#fcf9f680 57%,#fcf9f600 87%)}
+@media(max-width:640px){.hero:after{background:linear-gradient(90deg,#fcf9f6f4 0%,#fcf9f6cf 67%,#fcf9f652 100%)}}
